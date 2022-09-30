@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IPostService } from './i-post-service';
+import { IGetPost } from './i-get-post';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class HttpPostServiceService implements IPostService{
+export class HttpPostService implements IGetPost{
 
   constructor(private http: HttpClient) { }
 

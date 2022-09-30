@@ -9,6 +9,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MeteoModule } from './meteo/meteo.module';
 import { HttpSolidModule } from './http-solid/http-solid.module';
+import { HttpSolid2Module } from './http-solid2/http-solid2.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { HttpSolidModule } from './http-solid/http-solid.module';
     BrowserAnimationsModule,
     MeteoModule,
     HttpSolidModule,
+    HttpSolid2Module,
   ],
   providers: [],
   bootstrap: [AppComponent],

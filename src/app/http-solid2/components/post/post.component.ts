@@ -1,9 +1,10 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IPostService } from '../i-post-service';
+import { IGetPost } from '../i-get-post';
+
 
 @Component({
-  selector: 'app-post',
+  selector: 'app-post2',
   template: `
     {{ post$ |async|json}}
   `,
@@ -13,7 +14,7 @@ import { IPostService } from '../i-post-service';
 export class PostComponent implements OnInit {
   post$?: Observable<any>;
 
-  constructor(@Inject('PostService') private post: IPostService) {
+  constructor(@Inject('PostService') private post: IGetPost) {
     this.post$ = post.getPost();
    }
 

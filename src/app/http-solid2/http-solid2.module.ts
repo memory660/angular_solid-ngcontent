@@ -4,6 +4,8 @@ import { PostComponent } from './components/post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpPostService } from './components/http-post.service';
 
+
+
 @NgModule({
   declarations: [
     PostComponent
@@ -22,4 +24,4 @@ import { HttpPostService } from './components/http-post.service';
     PostComponent
   ]
 })
-export class HttpSolidModule { }
+export class HttpSolid2Module { }
