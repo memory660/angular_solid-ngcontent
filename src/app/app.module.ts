@@ -7,24 +7,20 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
-import { WidgetComponent } from './widget/widget.component';
-import { WetherContentComponent } from './widget/wether-content.component';
-import { VelocityContentComponent } from './widget/velocity-content.component';
+import { MeteoModule } from './meteo/meteo.module';
+import { HttpSolidModule } from './http-solid/http-solid.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    WidgetComponent,
-    WetherContentComponent,
-    VelocityContentComponent,
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatIconModule,
+    MeteoModule,
+    HttpSolidModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
